@@ -1,1 +1,3 @@
 # Resume
+
+![Resume](resume.jpg)

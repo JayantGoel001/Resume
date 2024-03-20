@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex
+% Author : Jayant Goel
+% License: Apache-2.0 license
+%------------------------
+\documentclass[letterpaper,13pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4.25pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeMultiplePositionSubheading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+       #3 & \small{#4} \\
+      \small{\textit{promoted from} #5} & \small #6 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & \small{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=* \label{}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%-----------INTRODUCTION-----------
+\begin{center}
+    \textbf{\Huge \scshape Jayant Goel} \\[.1in]
+    \href{mailto:jgoel92@gmail.com}{{\faEnvelope} \underline{jgoel92@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/jayantgoel001}{{\faLinkedinSquare} \underline{jayantgoel001}} $|$ 
+    \href{https://jayantgoel001.github.io}{{\faLink} \underline{jayantgoel001.github.io}} $|$ \href{https://github.com/jayantgoel001}{{\faGithub} \underline{jayantgoel001}} $|$ 
+    \href{tel:+91-8377838183}{{\faPhone} \underline{+91 83778 38183}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \begin{itemize}[leftmargin=*, label={}]
+    \resumeMultiplePositionSubheading
+      {\href{https://www.publicissapient.com/}{Publicis Sapient}}{Noida, India}
+      {Associate Software Development Engineer 2}{Nov 2023 - Present}
+      {Associate Software Development Engineer 1}{Jun 2022 - Oct 2023}
+      \resumeItemListStart
+        \resumeItem{Engaged in overseeing \textbf{the complete Software Development Life Cycle (SDLC)} for \textbf{Java-based full-stack} projects across diverse domains, including \textbf{finance, travel, industrial, and telecommunication sectors}}
+        \resumeItem{Developing the \textbf{backend functionality utilizing Spring Boot (Webflux/MVC)}, incorporating databases such as \textbf{MySQL and MongoDB} along with \textbf{JPA}, conducting unit tests utilizing \textbf{JUnit 5 and Mockito}, leveraging \textbf{Kafka} as an event broker, integrating \textbf{React.js} for the frontend, and documenting APIs with \textbf{Swagger}}
+        \resumeItem{Playing a pivotal role in \textbf{architectural decisions}, conducting \textbf{code reviews}, and managing \textbf{cloud infrastructure across multiple cloud platforms like AWS, GCP, or Azure}. Implementing \textbf{DevOps automation} tasks, including establishing \textbf{Jenkins pipelines} integrated with \textbf{Sonarqube} for maintaining code quality standards and ensuring test coverage reaches \textbf{100\%}. Additionally, handling \textbf{Docker} image creation and facilitating container deployment.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {\href{https://drive.google.com/file/d/17-DFgOcSbG0xDdktRRiiSUSSK33WUFMe/view?usp=drive_link}{TalentDecrypt}}{Delhi, India}
+      {Data Science Intern}{Jan 2021 - Oct 2021}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{candidate suspicious activity detection system} by integrating sophisticated components such as \textbf{Face Detection, Recognition, and Object Detection} to enhance examination procedures and ensure scrutiny}
+        \resumeItem{Integrated an \textbf{Audio Wave Visualizer} and \textbf{Brightness Checker} functionality to detect irregularities}
+      \resumeItemListEnd
+    \resumeSubheading    {\href{https://drive.google.com/file/d/1Ahg2Gzz8oLBs495N4PT9a1fszNBcJUB9/view?usp=drive_link}{Theatron Square}}{Delhi, India}
+      {Android Developer}{Feb 2020 - Sep 2020}
+      \resumeItemListStart
+        \resumeItem{Worked on a \textbf{video-sharing Android application} similar to \textbf{YouTube}, empowering artists to showcase their talents, built using \textbf{Kotlin} and \textbf{Firebase} and published it on \textbf{Google Play Store}}
+        \resumeItem{Worked on the \textbf{video compression} functionality to reduce size without compromising quality}
+      \resumeItemListEnd
+  \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \begin{itemize}[leftmargin=*, label={}]
+    \resumeSubheading
+      {Jaypee Institute Of Information Technology}{Noida, India}
+      {Bachelors of Technology in Computer Science engineering}{Aug 2018 - Jun 2022}
+      \resumeItemListStart
+      \resumeItem{Cumulative GPA: 9.1/10.0}
+      \resumeItem{Relevant course work: Data Structures and Algorithms, Database Management Systems, Engineering Mathematics, Operating Systems, Computer Networks, Computer Architecture, Theory of Computation, Compiler Design}
+      \resumeItemListEnd
+  \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \begin{itemize}[leftmargin=*, label={}]
+      \resumeProjectHeading
+          {\href{https://github.com/JayantGoel001/A-Social-Media}{\textbf{A Social Media}} $|$ \emph{MEAN stack, Vercel, Github Pages, MongoDB Atlas}}{Aug 2020 - Sep 2020}
+          \resumeItemListStart
+            \resumeItem{A Social Media is an innovative application crafted through \textbf{MEAN Stack Development}. Within this platform, users can establish connections while sharing their thoughts through posts and messages}
+            \resumeItem{The API is deployed on \textbf{Vercel} and frontend on \textbf{GitHub Pages}, ensuring optimal performance}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/JayantGoel001/AI-Image-Caption-Bot}{\textbf{AI Image Caption Bot}} $|$ \emph{Python, NumPy, Pandas, Keras, nltk, Tensorflow, Flickr8k}}{Jun 2020 - Jul 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a project leveraging \textbf{deep learning and computer vision} to analyze image context and generate captions}
+            \resumeItem{Utilized \textbf{ResNet50, a CNN model} for image feature extraction from the \textbf{ImageNet dataset}}
+            \resumeItem{Integrated features into \textbf{LSTM model} for generating \textbf{descriptive image captions}, enhancing automated annotation}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/JayantGoel001/AI-Music-Generation}{\textbf{AI Music Generation}} $|$ \emph{Python, NumPy, Pandas, Keras, Music21, Tensorflow}}{Jun 2020 - Jul 2020}
+          \resumeItemListStart
+            \resumeItem{Implemented a system that generates \textbf{melodious pieces of piano music} using various parameters like pitch interval, notes, chords, stream, etc}
+          \resumeItemListEnd
+    \end{itemize}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages: }{Java, Python, C/C++, JavaScript, Typescript, HTML/CSS, Kotlin, MongoDB, MySQL} \\
+     \textbf{Frameworks: }{Spring Boot, MERN/MEAN, Kafka, GraphQL, Machine Learning/Data Science, Android, SEO, PWA} \\
+     \textbf{Testing: }{JUnit, Mockito, Jest} \\
+     \textbf{Developer Tools: }{Docker, AWS, Azure, GCP, Firebase, SonarQube, Jenkins, Git/GitHub, VS Code, PyCharm, IntelliJ}
+    }}
+ \end{itemize}
+
+%------ACHIEVEMENTS AND RECOGNITIONS--------
+\section{Achievements and Certifications}
+  \resumeItemListStart      \resumeItem{\href{https://drive.google.com/file/d/1U9yLcTbFNVLfGm9tHbY7JiOYqgzFtAvm/view?usp=drive_link&usp=embed_facebook}{\textbf{Rookie of the Batch}} award at \textbf{Publicis Sapient} in Oct 2022 for exhibiting all company core values}
+  \resumeItem{\href{https://www.facebook.com/codingcompetitions/hacker-cup/2021/certificate/530301721540794}{\textbf{Facebook Hacker Cup 2021}} Qualification Round Rank \textbf{94}}
+  \resumeItem{Achieved \textbf{6 \faStar} on \href{https://www.hackerrank.com/profile/JayantGoel001}{\textbf{HackerRank}} with over \textbf{3300} points, demonstrating \textbf{exceptional coding skills}}\resumeItem{\textbf{Major Certifications:} \href{https://drive.google.com/file/d/15qgH3MU0gf9ww9uZuMcu4e2ezFcTaZK1/view?usp=drive_link}{\underline{\textbf{AWS} Certified Cloud Practitioner}}, \href{https://drive.google.com/file/d/1gxAfbcVD6_U8mtxzcrPHf1gZmZ5Z20xh/view?usp=drive_link}{\underline{\textbf{Google Cloud} Cloud Digital Leader}}, \href{https://drive.google.com/file/d/1_ghen3KbDJKEgsdudfGRUg77y8ytYC3L/view?usp=drive_link}{\underline{Microsoft Certified: \textbf{Azure} Fundamentals}}, and
+      \href{https://drive.google.com/file/d/12THg9_3-KtjSRe7pLfw27_pqwkDtSQMx/view?usp=drive_link}{\underline{The Complete 2020 \textbf{Web Developer} Master Course - \textbf{Udemy}}}
+      }
+  \resumeItemListEnd
+\end{document}
