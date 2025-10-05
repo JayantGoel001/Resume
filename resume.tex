@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Jayant Goel
+% Author: Jayant Goel
 % License: Apache-2.0 license
 %------------------------
 \documentclass[letterpaper,13pt]{article}
@@ -56,7 +56,7 @@
   \vspace{-4.25pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generated pdf is machine readable/ATS parsable
+% Ensure that the generated PDF is machine-readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -65,14 +65,6 @@
   \item\small{
     {#1 \vspace{-2pt}}
   }
-}
-\newcommand{\resumeMultiplePositionSubheading}[6]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-       #3 & \small{#4} \\
-      \small{\textit{promoted from} #5} & \small #6 \\
-    \end{tabular*}\vspace{-7pt}
 }
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
@@ -115,10 +107,16 @@
 %-----------EXPERIENCE-----------
 \section{Work Experience}
   \begin{itemize}[leftmargin=*, label={}]
-    \resumeMultiplePositionSubheading
+    \resumeSubheading
+      {\href{https://www.swiggy.com/}{Swiggy}}{Bangalore, India}
+      {Software Development Engineer 1}{Jan 2025 - Present}
+      \resumeItemListStart
+        \resumeItem{Migrated legacy services to modern architecture, reducing system complexity by 40\% and improving P99 latency by 11ms while maintaining 95\%+ code coverage through comprehensive unit and integration testing}
+        \resumeItem{Developed IoT integration platform with webhook APIs and automated control systems, reducing manual operational interventions by 80\% and improving system reliability to 99.9\% uptime}
+      \resumeItemListEnd
+    \resumeSubheading
       {\href{https://www.publicissapient.com/}{Publicis Sapient}}{Noida, India}
-      {Associate Software Development Engineer 2}{Nov 2023 - Present}
-      {Associate Software Development Engineer 1}{Jun 2022 - Oct 2023}
+      {Associate Software Development Engineer 2}{Jun 2022 - Dec 2024}
       \resumeItemListStart
         \resumeItem{Engaged in overseeing the complete Software Development Life Cycle (SDLC) for Java-based full-stack projects across diverse domains, including finance, travel, industrial, and telecommunication sectors}
         \resumeItem{Developing the backend functionality utilizing Spring Boot (Webflux/MVC), incorporating databases such as MySQL and MongoDB along with JPA, conducting unit tests utilizing JUnit 5 and Mockito, leveraging Kafka as an event broker, integrating React.js for the frontend, and documenting APIs with Swagger}
@@ -167,29 +165,24 @@
             \resumeItem{Utilized ResNet50, a CNN model for image feature extraction from the ImageNet dataset}
             \resumeItem{Integrated features into LSTM model for generating descriptive image captions, enhancing automated annotation}
           \resumeItemListEnd
-      \resumeProjectHeading
-          {\href{https://github.com/JayantGoel001/AI-Music-Generation}{\textbf{AI Music Generation}} $|$ \emph{Python, NumPy, Pandas, Keras, Music21, Tensorflow}}{Jun 2020 - Jul 2020}
-          \resumeItemListStart
-            \resumeItem{Implemented a system that generates melodious pieces of piano music using various parameters like pitch interval, notes, chords, stream, etc}
-          \resumeItemListEnd
     \end{itemize}
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages: }{Java, Python, C/C++, JavaScript, Typescript, HTML/CSS, Kotlin, MongoDB, MySQL} \\
-     \textbf{Frameworks: }{Spring Boot, MERN/MEAN, Kafka, GraphQL, Machine Learning/Data Science, Android, SEO, PWA} \\
-     \textbf{Testing: }{JUnit, Mockito, Jest} \\
-     \textbf{Developer Tools: }{Docker, AWS, Azure, GCP, Firebase, SonarQube, Jenkins, Git/GitHub, VS Code, PyCharm, IntelliJ}
+     \textbf{Programming Languages: }{Go, Java, Python, C/C++, JavaScript, Typescript, HTML/CSS, Kotlin, MongoDB, MySQL} \\
+     \textbf{Frameworks: }{gRPC, Redis, Spring Boot, MERN/MEAN, Kafka, GraphQL, Machine Learning/Data Science, Android, SEO} \\
+     \textbf{Testing: }{JUnit, Mockito, Jest}
     }}
  \end{itemize}
 
 %------ACHIEVEMENTS AND RECOGNITIONS--------
 \section{Achievements and Certifications}
-  \resumeItemListStart      \resumeItem{\href{https://drive.google.com/file/d/1U9yLcTbFNVLfGm9tHbY7JiOYqgzFtAvm/view?usp=drive_link&usp=embed_facebook}{\textbf{Rookie of the Batch}} award at \textbf{Publicis Sapient} in Oct 2022 for exhibiting all company core values}
-  \resumeItem{\href{https://www.facebook.com/codingcompetitions/hacker-cup/2021/certificate/530301721540794}{\textbf{Facebook Hacker Cup 2021}} Qualification Round Rank 94}
-  \resumeItem{Achieved \textbf{6 \faStar} on \href{https://www.hackerrank.com/profile/JayantGoel001}{\textbf{HackerRank}} with over 3300 points, demonstrating exceptional coding skills}
+  \resumeItemListStart      
+\resumeItem{\href{https://drive.google.com/file/d/16kl63FbmVBjhNibiJ1LzKRyyKQI73X5e/view?usp=sharing}{\textbf{Most Valuable Player (MVP)}} award twice at \textbf{Swiggy} for going above and beyond to drive team success and impact}
+\resumeItem{\href{https://drive.google.com/file/d/1U9yLcTbFNVLfGm9tHbY7JiOYqgzFtAvm/view?usp=drive_link&usp=embed_facebook}{\textbf{Rookie of the Batch}} award at \textbf{Publicis Sapient} in Oct 2022 for exhibiting all company core values}
+  \resumeItem{Achieved \textbf{6 \faStar} on \href{https://www.hackerrank.com/profile/JayantGoel001}{\textbf{HackerRank}} with over 3300 points}
   \resumeItem{\textbf{Major Certifications:} \href{https://drive.google.com/file/d/15qgH3MU0gf9ww9uZuMcu4e2ezFcTaZK1/view?usp=drive_link}{\underline{AWS Certified Cloud Practitioner}}, \href{https://drive.google.com/file/d/1gxAfbcVD6_U8mtxzcrPHf1gZmZ5Z20xh/view?usp=drive_link}{\underline{Google Cloud Certified Cloud Digital Leader}}, \href{https://drive.google.com/file/d/1_ghen3KbDJKEgsdudfGRUg77y8ytYC3L/view?usp=drive_link}{\underline{Microsoft Certified: Azure Fundamentals}}, and
       \href{https://drive.google.com/file/d/12THg9_3-KtjSRe7pLfw27_pqwkDtSQMx/view?usp=drive_link}{\underline{The Complete 2020 Web Developer Master Course - Udemy}}
       }
