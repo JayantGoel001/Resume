@@ -6,13 +6,17 @@
 \documentclass[letterpaper,13pt]{article}
 
 \usepackage{latexsym}
-\usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[
+  hidelinks,
+  pdfauthor={Jayant Goel},
+  pdftitle={Jayant Goel Resume}
+]{hyperref}
+
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -39,11 +43,7 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.7in}
-\addtolength{\textheight}{1.0in}
+\usepackage[left=0.45in,right=0.45in,top=0.45in,bottom=0.45in]{geometry}
 
 \urlstyle{same}
 
@@ -53,7 +53,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4.25pt}\scshape\raggedright\large
+  \vspace{-5pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that the generated PDF is machine-readable/ATS parsable
@@ -97,11 +97,16 @@
 
 %-----------INTRODUCTION-----------
 \begin{center}
-    \textbf{\Huge \scshape Jayant Goel} \\[.1in]
-    \href{mailto:jgoel92@gmail.com}{{\faEnvelope} \underline{jgoel92@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/jayantgoel001}{{\faLinkedinSquare} \underline{jayantgoel001}} $|$ 
-    \href{https://jayantgoel001.github.io}{{\faLink} \underline{jayantgoel001.github.io}} $|$ \href{https://github.com/jayantgoel001}{{\faGithub} \underline{jayantgoel001}} $|$ 
-    \href{tel:+91-8377838183}{{\faPhone} \underline{+91 83778 38183}}
+    \textbf{\Huge \scshape Jayant Goel}%
+    \hspace{0.6em}%
+    \href{https://jayantgoel001.github.io}{\raisebox{0.05em}{\large{\faExternalLink}}} \\[.1in]%
+    {\scriptsize
+    \href{mailto:jgoel92@gmail.com}{{\faEnvelope} jgoel92@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/jayantgoel001}{{\faLinkedinSquare} linkedin.com/in/jayantgoel001} $|$ 
+    \href{https://github.com/jayantgoel001}{{\faGithub} github.com/jayantgoel001} $|$ 
+    \href{tel:+91-8377838183}{{\faPhone} +91 83778 38183} $|$ 
+    \href{https://leetcode.com/u/JayantGoel001/}{{\faCode} leetcode.com/u/JayantGoel001/}
+    }
 \end{center}
 
 %-----------EXPERIENCE-----------
@@ -111,31 +116,31 @@
       {\href{https://www.swiggy.com/}{Swiggy}}{Bangalore, India}
       {Software Development Engineer 1}{Jan 2025 - Present}
       \resumeItemListStart
-        \resumeItem{Migrated legacy distance calculation service to modern architecture, responsible for food delivery ETAs, reducing system complexity by 40\%, improving P99 latency by 11ms, \$3600 monthly cost savings while maintaining 95\%+ code coverage through comprehensive unit and integration testing}
-        \resumeItem{Architected and executed consolidation of distributed geospatial data ingestion, reducing microservices footprint by 60\% and database infrastructure by 78\%, achieving 33\% reduction in operational costs and improving P99 latency with zero downtime}
-        \resumeItem{Implemented distance accuracy optimization system leveraging polyline subsegment caching, increasing served distance coverage by 28pp, improving Distance BDC by 9.91pp, and reducing ED by 15 bps}
-        \resumeItem{Developed IoT integration platform with webhook APIs and automated control systems for real-time rain mode automation, reducing manual operational interventions by 80\% and improving system reliability to 99.9\% uptime}
-        \resumeItem{Consolidated standalone metadata enrichment microservice into core CRUD service, reducing update latency by eliminating async messaging round-trips and network overhead while maintaining zero data loss and 99.99\% availability during migration}
-        \resumeItem{Unified trip summary computation logic across delivery partner payouts and monitoring systems, eliminating code duplication and data inconsistencies to improve reliability for critical payout calculations}
+        \resumeItem{Migrated a legacy distance calculation service to a modern architecture powering food delivery ETAs, streamlining infrastructure by 40\%, cutting P99 latency by 11 ms, and delivering \$3,600 in monthly cost savings while retaining 95\%+ unit and integration test coverage}
+        \resumeItem{Architected and executed consolidation of distributed geospatial data ingestion, retiring 60\% of microservices and 78\% of database infrastructure, driving a 33\% reduction in operational costs and reducing P99 latency, with uninterrupted production traffic}
+        \resumeItem{Designed and deployed a distance accuracy system using polyline subsegment caching, expanding served distance coverage by 28 pp, raising Distance BDC by 9.91 pp, and reducing Egregious Delay by 15 bps}
+        \resumeItem{Delivered an IoT integration system with webhook APIs and automated control workflows for real-time rain mode activation, cutting manual operational interventions by 80\% and stabilizing uptime at 99.9\%}
+        \resumeItem{Consolidated a standalone metadata enrichment service into the core CRUD service, reducing update latency by removing async messaging round-trips and network overhead, while ensuring zero data loss and 99.99\% availability throughout the migration}
+        \resumeItem{Unified trip summary computation across delivery partner payouts and monitoring systems, removing code duplication and data inconsistencies to strengthen reliability for critical payout calculations}
       \resumeItemListEnd
     \resumeSubheading
       {\href{https://www.publicissapient.com/}{Publicis Sapient}}{Noida, India}
       {Associate Software Development Engineer 2}{Jun 2022 - Dec 2024}
       \resumeItemListStart
-        \resumeItem{Engaged in overseeing the complete Software Development Life Cycle (SDLC) for Java-based full-stack projects across diverse domains, including finance, travel, industrial, and telecommunication sectors}
-        \resumeItem{Developing the backend functionality utilizing Spring Boot (Webflux/MVC), incorporating databases such as MySQL and MongoDB along with JPA, conducting unit tests utilizing JUnit 5 and Mockito, leveraging Kafka as an event broker, integrating React.js for the frontend, and documenting APIs with Swagger}
-        \resumeItem{Playing a pivotal role in architectural decisions, conducting code reviews, and managing cloud infrastructure across multiple cloud platforms like AWS, GCP, or Azure. Implementing DevOps automation tasks, including establishing Jenkins pipelines integrated with Sonarqube to maintain code quality standards and ensure test coverage reaches 100\%. Additionally, handling Docker image creation and facilitate container deployment}
+        \resumeItem{Owned end-to-end delivery of Java-based full-stack systems across finance, travel, industrial, and telecommunications domains}
+        \resumeItem{Designed and developed scalable backend services using Spring Boot (WebFlux/MVC), backed by MySQL and MongoDB via JPA, with event-driven workflows using Kafka, comprehensive unit testing with JUnit 5 and Mockito, React-based frontends, and Swagger-documented APIs}
+        \resumeItem{Drove architectural decisions, code reviews, and cloud infrastructure management across AWS, GCP, and Azure, implementing CI/CD pipelines with Jenkins and SonarQube to enforce code quality and achieve 100\% test coverage, along with Docker-based containerization}
       \resumeItemListEnd
     \resumeSubheading
       {\href{https://drive.google.com/file/d/17-DFgOcSbG0xDdktRRiiSUSSK33WUFMe/view?usp=drive_link}{TalentDecrypt}}{Delhi, India}
       {Data Science Intern}{Jan 2021 - Oct 2021}
       \resumeItemListStart
-        \resumeItem{Developed a candidate suspicious activity detection system integrating Face Detection, Recognition, Object Detection, Audio Wave Visualizer, and Brightness Checker to enhance examination procedures and ensure scrutiny}
+        \resumeItem{Engineered a candidate suspicious activity detection platform integrating Face Detection, Recognition, Object Detection, Audio Wave Visualizer, and Brightness Checker to strengthen examination integrity and detection accuracy}
       \resumeItemListEnd
     \resumeSubheading    {\href{https://drive.google.com/file/d/1Ahg2Gzz8oLBs495N4PT9a1fszNBcJUB9/view?usp=drive_link}{Theatron Square}}{Delhi, India}
       {Android Developer}{Feb 2020 - Sep 2020}
       \resumeItemListStart
-        \resumeItem{Developed and published a video-sharing Android App on Google Play Store using Kotlin and Firebase, empowering artists to showcase their talents with optimized video compression functionality to reduce file size without compromising quality}
+        \resumeItem{Built and published a video-sharing Android App on Google Play Store using Kotlin and Firebase, empowering artists to showcase their talents with efficient video compression to reduce file size without compromising quality}
       \resumeItemListEnd
   \end{itemize}
 
@@ -144,10 +149,10 @@
   \begin{itemize}[leftmargin=*, label={}]
     \resumeSubheading
       {Jaypee Institute Of Information Technology}{Noida, India}
-      {Bachelors of Technology in Computer Science Engineering}{Aug 2018 - Jun 2022}
+      {Bachelor of Technology in Computer Science Engineering}{Aug 2018 - Jun 2022}
       \resumeItemListStart
       \resumeItem{Cumulative GPA: 9.1/10.0}
-      \resumeItem{Relevant course work: Data Structures and Algorithms, OOPS, DBMS, Operating Systems, Computer Networks}
+      \resumeItem{Relevant coursework: Data Structures and Algorithms, OOPs, DBMS, Operating Systems, Computer Networks}
       \resumeItemListEnd
   \end{itemize}
 
@@ -155,20 +160,21 @@
 \section{Projects}
     \begin{itemize}[leftmargin=*, label={}]
       \resumeProjectHeading
-          {\href{https://github.com/JayantGoel001/A-Social-Media}{\textbf{A Social Media}} $|$ \emph{MEAN stack, Vercel, Github Pages, MongoDB Atlas}}{Aug 2020 - Sep 2020}
+          {\href{https://github.com/JayantGoel001/A-Social-Media}{\textbf{A Social Media}} $|$ \emph{MEAN stack, Vercel, GitHub Pages, MongoDB Atlas}}{Aug 2020 - Sep 2020}
           \resumeItemListStart
-            \resumeItem{A Social Media is an innovative application crafted through MEAN Stack Development. Within this platform, users can establish connections while sharing their thoughts through posts and messages}
-            \resumeItem{The API is deployed on Vercel and frontend on GitHub Pages, ensuring optimal performance}
+            \resumeItem{A MEAN-stack social networking application enabling users to connect and share posts and messages in real time}
+            \resumeItem{The API is deployed on Vercel and the frontend on GitHub Pages, ensuring optimal performance}
           \resumeItemListEnd
     \end{itemize}
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Programming Languages: }{Go, Java, Python, C/C++, JavaScript, Typescript, HTML/CSS, Kotlin, MongoDB, MySQL} \\
-     \textbf{Frameworks: }{gRPC, Redis, Spring Boot, MERN/MEAN, Kafka, GraphQL, Machine Learning/Data Science, Android, SEO} 
-    }}
+    \item{
+     \textbf{Programming Languages: }{Go, Java, Python, C/C++, JavaScript, TypeScript, HTML/CSS, Kotlin} \\
+     \textbf{Datastores: }{MongoDB, MySQL, DynamoDB, Redis} \\
+     \textbf{Frameworks \& Tools: }{gRPC, REST APIs, Spring Boot, Kafka, MERN/MEAN, GraphQL, Data Science, Android, Docker, AWS, GCP, SonarQube} 
+    }
  \end{itemize}
 
 %------ACHIEVEMENTS AND RECOGNITIONS--------
@@ -176,9 +182,9 @@
   \resumeItemListStart      
 \resumeItem{\href{https://drive.google.com/file/d/16kl63FbmVBjhNibiJ1LzKRyyKQI73X5e/view?usp=sharing}{\textbf{Most Valuable Player (MVP)}} award twice at \textbf{Swiggy} for going above and beyond to drive team success and impact}
 \resumeItem{\href{https://drive.google.com/file/d/1U9yLcTbFNVLfGm9tHbY7JiOYqgzFtAvm/view?usp=drive_link&usp=embed_facebook}{\textbf{Rookie of the Batch}} award at \textbf{Publicis Sapient} in Oct 2022 for exhibiting all company core values}
-  \resumeItem{Achieved \textbf{6 \faStar} on \href{https://www.hackerrank.com/profile/JayantGoel001}{\textbf{HackerRank}} with over 3300 points}
-  \resumeItem{\textbf{Major Certifications:} \href{https://drive.google.com/file/d/15qgH3MU0gf9ww9uZuMcu4e2ezFcTaZK1/view?usp=drive_link}{\underline{AWS Certified Cloud Practitioner}}, \href{https://drive.google.com/file/d/1gxAfbcVD6_U8mtxzcrPHf1gZmZ5Z20xh/view?usp=drive_link}{\underline{Google Cloud Certified Cloud Digital Leader}}, \href{https://drive.google.com/file/d/1_ghen3KbDJKEgsdudfGRUg77y8ytYC3L/view?usp=drive_link}{\underline{Microsoft Certified: Azure Fundamentals}}, and
-      \href{https://drive.google.com/file/d/12THg9_3-KtjSRe7pLfw27_pqwkDtSQMx/view?usp=drive_link}{\underline{The Complete 2020 Web Developer Master Course - Udemy}}
+  \resumeItem{Achieved \textbf{6 \faStar} on \href{https://www.hackerrank.com/profile/JayantGoel001}{\textbf{HackerRank}} with over 3,300 points}
+  \resumeItem{\textbf{Major Certifications:} \href{https://drive.google.com/file/d/15qgH3MU0gf9ww9uZuMcu4e2ezFcTaZK1/view?usp=drive_link}{AWS Certified Cloud Practitioner}, \href{https://drive.google.com/file/d/1gxAfbcVD6_U8mtxzcrPHf1gZmZ5Z20xh/view?usp=drive_link}{Google Cloud Certified Cloud Digital Leader}, \href{https://drive.google.com/file/d/1_ghen3KbDJKEgsdudfGRUg77y8ytYC3L/view?usp=drive_link}{Microsoft Certified: Azure Fundamentals}, and
+      \href{https://drive.google.com/file/d/12THg9_3-KtjSRe7pLfw27_pqwkDtSQMx/view?usp=drive_link}{The Complete 2020 Web Developer Master Course - Udemy}
       }
   \resumeItemListEnd
 \end{document}
